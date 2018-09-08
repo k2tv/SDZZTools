@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.sdzz.tools"
+    android:versionCode="1"
+    android:versionName="1.5.5" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+    
+    <uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.CAMERA"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 位置获取 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:name="com.email.app.MyApplication"
+        >
+        <activity 
+            android:name="com.example.smartlife.LoadActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> 
+        </activity>
+        
+        <activity android:name="com.example.smartlife.SmartLife" android:theme="@style/AppTheme"></activity>
+        <activity android:name="com.example.smartlife.Setting" android:theme="@style/AppTheme"></activity>
+        	<activity android:name="com.example.smartlife.Setting_Mod" android:theme="@style/AppTheme"></activity>
+        		<activity android:name="com.example.smartlife.Setting_Mod_Pass" android:theme="@style/AppTheme"></activity>
+        	<activity android:name="com.example.smartlife.Setting_Auto" android:theme="@style/AppTheme"></activity>
+        		<activity android:name="com.example.smartlife.Setting_Auto_Setting" android:theme="@style/AppTheme"></activity>
+        	<activity android:name="com.example.smartlife.Setting_Msg" android:theme="@style/AppTheme"></activity>
+        	<activity android:name="com.example.smartlife.Setting_File_Main" android:theme="@style/AppTheme"></activity>
+        	<activity android:name="com.example.smartlife.Setting_Setting" android:theme="@style/AppTheme"></activity>
+    	<activity android:name="com.example.smartlife.Main_Traffic" android:theme="@style/AppTheme"></activity>
+    		<activity android:name="com.example.smartlife.Main_Traffic_KCDW" android:theme="@style/AppTheme"></activity>
+    		<activity android:name="com.example.smartlife.Main_Traffic_JCKW" android:theme="@style/AppTheme"></activity>
+    		<activity android:name="com.example.smartlife.Main_Traffic_JCJZ" android:theme="@style/AppTheme"></activity>
+    		<activity android:name="com.example.smartlife.Main_Traffic_Qita" android:theme="@style/AppTheme"></activity>
+    		<activity android:name="com.example.smartlife.Main_Traffic_Yanhuo" android:theme="@style/AppTheme"></activity>
+    		<activity android:name="com.example.smartlife.SensorTest" android:theme="@style/AppTheme"></activity>
+    	<activity android:name="com.example.smartlife.Login" android:theme="@style/AppTheme"></activity>
+  		<activity android:name="com.example.smartlife.Reg" android:theme="@style/AppTheme"></activity>
+  		
+  		<activity android:name="com.email.LoginActivity" android:theme="@style/AppTheme"/>
+  		<activity android:name="com.email.HomeActivity" android:theme="@style/AppTheme"/>
+        <activity android:name="com.email.MailEditActivity" android:theme="@style/AppTheme"/>
+        <activity android:name="com.email.MailBoxActivity" android:theme="@style/AppTheme"/>
+        <activity android:name="com.email.MailContentActivity" android:theme="@style/AppTheme"/>
+        <activity android:name="com.email.MailConstactsActivity" android:theme="@style/AppTheme"/>
+        <activity android:name="com.email.MailAddConstact" android:theme="@style/AppTheme"/>
+        <activity android:name="com.email.MailCaogaoxiangActivity" android:theme="@style/AppTheme"/>
+        
+        <activity
+            android:name="com.example.smartlife.MipcaActivityCapture"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        
+        <provider android:name="com.email.provider.EmailConstantProvider"
+            android:authorities="com.emailconstantprovider1"/>
+        <provider android:name="com.email.provider.CaogaoxiangProvider"
+            android:authorities="com.caogaoxiangprovider1"/>
+        <provider android:name="com.email.provider.AttachmentProvider"
+            android:authorities="com.attachmentprovider1"/>
+        <provider android:name="com.email.provider.EmailStatusProvider"
+            android:authorities="com.emailstatusprovider1"/>
+  		
+    </application>
+</manifest>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor" >
+
+    <RelativeLayout
+        android:id="@+id/left_auto_re01"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="@color/backgroundColor_low"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:id="@+id/left_auto_re01_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="居家模式"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/left_auto_re01_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/left_auto_re01_txt"
+            android:layout_below="@+id/left_auto_re01_txt"
+            android:layout_marginTop="10dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:src="@drawable/ic_item_clolck" />
+
+        <TextView
+            android:id="@+id/left_auto_re01_txt_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/left_auto_re01_txt"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/left_auto_re01_img"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="设定响应时间"
+            android:textColor="@color/bachgroundColor_touch" />
+
+        <CheckBox
+            android:id="@+id/left_auto_re01_chek"
+            style="@style/AutoCheckBoxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:checked="true" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#BABABA"
+            android:clickable="false"
+            android:focusable="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/left_auto_re02"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/left_auto_re01"
+        android:background="@color/backgroundColor_low"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:id="@+id/left_auto_re02_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="外出模式"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/left_auto_re02_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/left_auto_re02_txt"
+            android:layout_below="@+id/left_auto_re02_txt"
+            android:layout_marginTop="10dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:src="@drawable/ic_item_clolck" />
+
+        <TextView
+            android:id="@+id/left_auto_re02_txt_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/left_auto_re02_txt"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/left_auto_re02_img"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="设定响应时间"
+            android:textColor="@color/bachgroundColor_touch" />
+
+        <CheckBox
+            android:id="@+id/left_auto_re02_chek"
+            style="@style/AutoCheckBoxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:checked="false" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#BABABA"
+            android:clickable="false"
+            android:focusable="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/left_auto_re03"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/left_auto_re02"
+        android:background="@color/backgroundColor_low"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:id="@+id/left_auto_re03_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="睡觉模式"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/left_auto_re03_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/left_auto_re03_txt"
+            android:layout_below="@+id/left_auto_re03_txt"
+            android:layout_marginTop="10dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:src="@drawable/ic_item_clolck" />
+
+        <TextView
+            android:id="@+id/left_auto_re03_txt_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/left_auto_re03_txt"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/left_auto_re03_img"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="设定响应时间"
+            android:textColor="@color/bachgroundColor_touch" />
+
+        <CheckBox
+            android:id="@+id/left_auto_re03_chek"
+            style="@style/AutoCheckBoxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:checked="false" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#BABABA"
+            android:clickable="false"
+            android:focusable="false" />
+    </RelativeLayout>
+
+</RelativeLayout>
